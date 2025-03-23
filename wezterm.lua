@@ -8,11 +8,13 @@ local config = wezterm.config_builder()
 config.enable_tab_bar = false
 --window_background_opacity = .90
 -- For example, changing the color scheme:
-config.color_scheme = 'Rosé Pine (base16)'
+config.colors = require("cyberdream")
 config.show_tabs_in_tab_bar = false
 config.use_fancy_tab_bar = false
 config.show_new_tab_button_in_tab_bar = false
 config.window_decorations = "RESIZE"
+config.initial_cols = 120
+config.initial_rows = 30
 config.font = wezterm.font('IosevkaNerdFont', { weight= 'Bold',italic = true})
 
 local wezterm = require 'wezterm'
